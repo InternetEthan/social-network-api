@@ -6,15 +6,15 @@ const thoughtSchema = new Schema(
         thoughtText: {
             type: String,
             required: true,
-            min_length: 1,
-            max_length: 280,
+            minlength: 1,
+            maxlength: 280,
         },
-        createdAt: {
-            type: Date,
-            default: Date.now,
-            // Use a getter method to format the timestamp on query
-            get: (createdAtVal) => dateFormat(createdAtVal),
-        },
+        // createdAt: {
+        //     type: Date,
+        //     default: Date.now,
+        //     // Use a getter method to format the timestamp on query
+        //     get: (createdAtVal) => dateFormat(createdAtVal),
+        // },
         username: {
             type: String,
             required: true,
@@ -34,4 +34,5 @@ thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-model.exports = thoughtSchema;
+const Thought = model('Thought', thoughtSchema);
+module.exports = Thought;
