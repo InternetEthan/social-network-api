@@ -1,5 +1,4 @@
 # social-network-api
-Social Network API
 
 This project is a social network API built with Express.js and MongoDB. It allows users to create, read, update, and delete users and thoughts, and add or remove friends to a user's friend list. Users can also add reactions to thoughts.
 
