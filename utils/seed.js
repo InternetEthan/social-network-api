@@ -16,7 +16,7 @@ const userSeed = [
     username: 'user2',
     email: 'user2@example.com',
   },
-  // Add more users as needed
+  // as needed add more users here
 ];
 
 const thoughtSeed = [
@@ -30,7 +30,7 @@ const thoughtSeed = [
       },
     ],
   },
-  // Add more thoughts as needed
+  // as needed add more thoughts and reactions here
 ];
 
 User.deleteMany({})

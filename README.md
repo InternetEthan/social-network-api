@@ -12,7 +12,7 @@ This project is a social network API built with Express.js and MongoDB. It allow
 ## Models
 
 - `User`: Represents a user in the social network. Each user has a username, email, and lists of thoughts and friends.
-- `Thought`: Represents a thought posted by a user. Each thought has a text, a username of the user who posted it, and a list of reactions.
+- `Thought`: Represents a thought posted by a user. Each thought has text, a username of the user who posted it, and a list of reactions.
 - `Reaction`: Represents a reaction to a thought. Each reaction has a body and a username of the user who posted it.
 
 ## Controllers
@@ -27,11 +27,11 @@ This project is a social network API built with Express.js and MongoDB. It allow
 
 ## Seed
 
-The `seed.js` file is used to seed the database with initial data. It creates some users and thoughts, and adds some reactions to the thoughts.
+The `seed.js` file is used to seed the database with initial data. It creates some users and thoughts and adds some reactions to the thoughts.
 
 ## Usage
 
-To use this project, you need to have Node.js and MongoDB installed. Clone the repository, navigate to the project directory in your terminal, and run `npm install` to install the dependencies. Then, you can run `node seed.js` to seed the database with initial data, and `npm start` to start the server. The API will be available at `http://localhost:3001/api`.
+To use this project, you need to have Node.js and MongoDB installed. Clone the repository, navigate to the project directory in your terminal, and run `npm install` to install the dependencies. Then, you can run `node seed.js` to seed the database with initial data and `npm start` to start the server. The API will be available at `http://localhost:3001/api`.
 
 ## Endpoints
 
